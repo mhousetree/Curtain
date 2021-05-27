@@ -1,6 +1,6 @@
 :root {
     font-size: 100px;
-    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
 body {
@@ -10,14 +10,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 textarea {
     height: 1.5rem;
     width: 90vw;
     padding: 0;
-    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
@@ -28,7 +28,7 @@ textarea {
 
     &::placeholder {
         line-height: 1.5rem;
-        font-size: .5rem;
+        font-size: 0.5rem;
     }
 
     &:focus-visible {
@@ -36,8 +36,8 @@ textarea {
     }
 }
 
-input[name=button_toggle] {
-    visibility: hidden;
+input[name="button_toggle"] {
+    display: none;
 }
 
 #bg_color_change {
@@ -45,14 +45,40 @@ input[name=button_toggle] {
     cursor: pointer;
     top: 4vh;
     // right: 4vh;
-    width: .4rem;
-    height: .4rem;
+    width: 0.4rem;
+    height: 0.4rem;
     border: none;
     background-color: transparent;
     background-image: url(img/palette_black_24dp.svg);
     background-size: cover;
-    opacity: .5;
-    transition: .5s;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+ul {
+    font-size: 14px;
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0.1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    li {
+        cursor: pointer;
+        width: 0.3rem;
+        height: 0.3rem;
+        box-sizing: border-box;
+        background-color: lavender;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        border-radius: .15rem;
+        border: 3px solid #f3f3f3;
+    }
 }
 
 #qa {
@@ -62,9 +88,9 @@ input[name=button_toggle] {
     border-radius: 1em;
     background-color: #fff;
     font-size: 14px;
-    filter: drop-shadow(1px 2px 1px rgba(#000, .6));
+    filter: drop-shadow(1px 2px 1px rgba(#000, 0.6));
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
 
     &::after {
         position: absolute;
@@ -113,7 +139,7 @@ small {
 @media screen and (max-width: 1280px) {
     textarea {
         &::placeholder {
-            font-size: .3rem;
+            font-size: 0.3rem;
         }
     }
 }
@@ -121,8 +147,7 @@ small {
 @media screen and (max-width: 740px) {
     textarea {
         &::placeholder {
-            font-size: .2rem;
+            font-size: 0.2rem;
         }
     }
-    
 }
