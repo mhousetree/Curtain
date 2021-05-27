@@ -15,12 +15,7 @@ body.addEventListener('click', setFocusOnTextarea);
 body.addEventListener(
     'click',
     function() {
-        const textarea = document.getElementById("title");
-        const color_icon = document.getElementById("bg_color_change");
-        const copyright = document.querySelector("small");
-        textarea.classList.add("clicked");
-        color_icon.style.filter = "invert(1)";
-        copyright.style.color = "#ccc";
+        body.classList.add("first-clicked");
         const rand = Math.floor(Math.random() * 8);
         if ( rand === 8 ) {
             rand = 7;

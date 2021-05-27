@@ -34,15 +34,6 @@ textarea {
     &:focus-visible {
         outline: none;
     }
-
-    &.clicked {
-        color: #fff;
-
-        &::placeholder {
-            color: #fff;
-            opacity: 50%;
-        }
-    }
 }
 
 input[name=button_toggle] {
@@ -97,6 +88,25 @@ small {
         &:visited {
             color: inherit;
         }
+    }
+}
+
+.first-clicked {
+    textarea {
+        color: #fff;
+
+        &::placeholder {
+            color: #fff;
+            opacity: 50%;
+        }
+    }
+
+    #bg_color_change {
+        filter: invert(1);
+    }
+
+    small {
+        color: #ccc;
     }
 }
 
