@@ -5,7 +5,8 @@
 サムネイル表示を分かりやすくするためのアプリケーションです。
 
 ## サンプル
-準備中です。
+<img src="https://user-images.githubusercontent.com/74708840/120384130-ba9c1500-c360-11eb-8b44-66edbab5c2b5.png" width="40%">
+<img src="https://user-images.githubusercontent.com/74708840/120384271-e4edd280-c360-11eb-81ea-a91252214bae.png" width="40%">
 
 ## 技術
 - HTML
